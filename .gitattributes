@@ -1,0 +1,2 @@
+# Tell GitHub to ignore shell scripts for language detection
+scripts/*.sh linguist-documentation

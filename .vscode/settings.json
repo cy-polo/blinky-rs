@@ -1,0 +1,7 @@
+{
+	"rust-analyzer.cargo.target": "xtensa-esp32-none-elf",
+	"rust-analyzer.rustc.source": "discover",
+	"rust-analyzer.cargo.buildScripts.enable": true,
+	"rust-analyzer.check.command": "clippy",
+	"rust-analyzer.check.allTargets": false
+}
