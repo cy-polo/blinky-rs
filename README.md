@@ -67,10 +67,21 @@ The project is currently configured for **ESP32** (original). To support other v
 
 To configure for a different chip:
 
+1. Update `Cargo.toml` dependencies:
+
 ```toml
 [dependencies]
 esp-bootloader-esp-idf = { version = "0.2.0", features = ["esp32s3"] } # For ESP32-S3
 esp-hal = { version = "=1.0.0-rc.0", features = ["esp32s3", "unstable"] }
+```
+
+2. Update the installation script target:
+
+In `scripts/install.sh`, change the target:
+
+```bash
+# For ESP32-S3
+espup install --targets esp32s3
 ```
 
 ### Build Profiles
